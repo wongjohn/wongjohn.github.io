@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html id="top" lang="en" ng-app="blog">
-    <head>
-        <title>Wong John's Blog</title>
+---
+layout: default
+---
 
-        <link href="logo/UI_Shield.png" rel="shortcut icon">
+<div class="home">
 
-        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="css/app.css" rel="stylesheet">
-    </head>
+  <h1 class="page-heading">Posts</h1>
 
-    <body ng-controller="BlogCtrl">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <div style="width: 500px;margin: 0 auto;">
-            <p style="font-size: 48px;">Wong John's Blog</p>
-            <p style="font-size: 24px;">Comming soon!</p>
-            <img style="width: 100%;" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%20%20height%3D%22273px%22%20%20%20width%3D%22419px%22%20%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22PSgrad_0%22%20x1%3D%220%25%22%20x2%3D%220%25%22%20y1%3D%22100%25%22%20y2%3D%220%25%22%3E%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22rgb(255%2C255%2C255)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgb(176%2C168%2C165)%22%20stop-opacity%3D%221%22%20%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22PSgrad_1%22%20x1%3D%220%25%22%20x2%3D%220%25%22%20y1%3D%22100%25%22%20y2%3D%220%25%22%3E%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22rgb(145%2C141%2C138)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%2247%25%22%20stop-color%3D%22rgb(116%2C117%2C119)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgb(166%2C166%2C164)%22%20stop-opacity%3D%221%22%20%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22PSgrad_2%22%20x1%3D%2279.864%25%22%20x2%3D%220%25%22%20y1%3D%2260.182%25%22%20y2%3D%220%25%22%3E%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22rgb(202%2C195%2C187)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgb(255%2C255%2C255)%22%20stop-opacity%3D%221%22%20%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22PSgrad_3%22%20x1%3D%22100%25%22%20x2%3D%220%25%22%20y1%3D%220%25%22%20y2%3D%220%25%22%3E%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22rgb(145%2C138%2C130)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%2245%25%22%20stop-color%3D%22rgb(168%2C164%2C161)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%2289%25%22%20stop-color%3D%22rgb(146%2C139%2C133)%22%20stop-opacity%3D%221%22%20%2F%3E%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22rgb(165%2C161%2C158)%22%20stop-opacity%3D%221%22%20%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22rgb(%20198%2C%20194%2C%20193%20)%22%20d%3D%22M209.5%2C145%20C325.204%2C145%20419%2C173.654%20419%2C209%20C419%2C244.346%20325.204%2C273%20209.5%2C273%20C93.796%2C273%200%2C244.346%200%2C209%20C0%2C173.654%2093.796%2C145%20209.5%2C145%20Z%20%22%2F%3E%3Cpath%20fill%3D%22url(%23PSgrad_0)%22%20d%3D%22M209%2C145%20C324.427%2C145%20418%2C172.311%20418%2C206%20C418%2C239.689%20324.427%2C267%20209%2C267%20C93.573%2C267%200%2C239.689%200%2C206%20C0%2C172.311%2093.573%2C145%20209%2C145%20Z%20%22%2F%3E%3Cpath%20opacity%3D%220.502%22%20fill%3D%22url(%23PSgrad_1)%22%20d%3D%22M213.5%2C212%20C249.623%2C212%20283.12%2C219.425%20292.797%2C229.593%20C292.947%2C233.831%20293.049%2C234.102%20293%2C236.5%20C292.814%2C245.636%20257.407%2C261%20213.5%2C261%20C169.593%2C261%20134%2C251.031%20134%2C237.5%20C134%2C236.383%20133.733%2C234.38%20133.713%2C233.205%20C133.429%2C216.652%20173.22%2C212%20213.5%2C212%20Z%20%22%2F%3E%3Cpath%20fill%3D%22url(%23PSgrad_2)%22%20d%3D%22M383%2C36%20C381.516%2C172.075%20308.978%2C250%20211.5%2C250%20C114.022%2C250%2039.725%2C172.219%2037%2C36%20C84.125%2C36%20253.529%2C32.213%20383%2C36%20Z%20%22%2F%3E%3Cpath%20fill%3D%22rgb(%20255%2C%20255%2C%20255%20)%22%20d%3D%22M210.5%2C0%20C305.769%2C0%20383%2C15.894%20383%2C35.5%20C383%2C55.106%20305.769%2C71%20210.5%2C71%20C115.231%2C71%2038%2C55.106%2038%2C35.5%20C38%2C15.894%20115.231%2C0%20210.5%2C0%20Z%20%22%2F%3E%3Cpath%20fill%3D%22url(%23PSgrad_3)%22%20d%3D%22M211.5%2C4%20C301.799%2C4%20375%2C18.103%20375%2C35.5%20C375%2C52.897%20301.799%2C67%20211.5%2C67%20C121.201%2C67%2048%2C52.897%2048%2C35.5%20C48%2C18.103%20121.201%2C4%20211.5%2C4%20Z%20%22%2F%3E%3Cpath%20fill%3D%22rgb(%2077%2C%2056%2C%2039%20)%22%20d%3D%22M214.5%2C20%20C296.514%2C20%20342.277%2C37.148%20359%2C48.5%20C337.713%2C56.674%20295.014%2C68%20213%2C68%20C130.986%2C68%2081.272%2C58.143%2067%2C49.5%20C82.482%2C37.906%20132.486%2C20%20214.5%2C20%20Z%20%22%2F%3E%3C%2Fsvg%3E">
-        </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-        <script src="//cdn.bootcss.com/angular.js/1.4.1/angular.js"></script>
-        <script src="js/app.js"></script>
-    </body>
-</html>
+</div>
