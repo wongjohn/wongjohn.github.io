@@ -16,22 +16,20 @@ gulp.task('clean:_site_node_modules', function (done) {
     done();
 });
 
-gulp.task('copy:dependencies', ['clean:_site_node_modules', function (done) {
+gulp.task('copy:dependencies', ['clean:_site_node_modules'], function (done) {
     dependencies.forEach(function (dependency) {
         gulp.src(dependency)
             .pipe(gulp.dest('_site/' + dependency.replace(/\/\*\*\/\*\.\*/g, '/')));
     });
     done();
-}]);
+});
 
 gulp.task('build', shell.task(['jekyll build --watch']));
 
-gulp.task('serve', ['copy:dependencies', function () {
-
+gulp.task('serve', function () {
     browserSyc.init({server: {baseDir: '_site/'}});
 
     gulp.watch('_site/**/*.*').on('change', browserSyc.reload);
-
-}]);
+});
 
 gulp.task('default', ['build', 'serve']);
