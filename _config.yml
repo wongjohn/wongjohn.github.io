@@ -9,7 +9,7 @@
 title: Wang John's Blog
 email: wangshijiang@eqxiu.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is the blog site of Wang John.
+  王士江的博客，学习认真活着
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wongjohn.github.io" # the base hostname & protocol for your site
 twitter_username: wongjohn

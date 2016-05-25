@@ -1,38 +1,36 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+<!-- start bottom footer -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="widget">
+          <h4 class="title">最新文章</h4>
+          <div class="content recent-post">
+            <div class="recent-single-post">
+              <a class="post-title" href="/post">Ghost 桌面版 APP 正式发布</a>
+              <div class="date">2016年4月28日</div>
+            </div>
+            <div class="recent-single-post">
+              <a href="/post" class="post-title">为 Ubuntu 和 Debian 安装最新版本的 Node.js</a>
+              <div class="date">2016年3月23日</div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="col-sm-6">
+        <div class="widget">
+          <h4 class="title">标签云</h4>
+          <div class="content tag-cloud">
+            <a href="/tag/jquery">jQuery</a>
+            <a href="/tag/bootstrap">Bootstrap</a>
+            <a href="/tag/ES6">ES6</a>
+            <a href="/tag/angular">Angular</a>
+            <a href="/tag/angular-2">Angular 2</a>
+            <a href="/tag/material">Material</a>
+            <a href="/tag/electron">electron</a>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
-
-</footer>
+</footer><!-- main-footer -->
