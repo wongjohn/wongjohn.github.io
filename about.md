@@ -1,15 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于作者
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+最为一个技术资料收集狂，我已经积攒了相当的技术资料——但是，即使有大量的技术“存盘”储备，不代表我已经可以灵活掌控相应的知识——所以我决定，将学习到的知识以项目或者博客的形式做一个输出，边学边用、温故知新，以便利己、利人。
