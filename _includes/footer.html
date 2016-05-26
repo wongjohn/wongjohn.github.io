@@ -6,14 +6,14 @@
         <div class="widget">
           <h4 class="title">最新文章</h4>
           <div class="content recent-post">
+            {% for post in site.posts %}
+            {% if forloop.index <=2 %}
             <div class="recent-single-post">
-              <a class="post-title" href="/post">Ghost 桌面版 APP 正式发布</a>
-              <div class="date">2016年4月28日</div>
+              <a class="post-title" href="{{post.url | prepend: site.baseurl | replace: '//', '/'}}">{{post.title}}</a>
+              <div class="date">{{post.date | date_to_string}}</div>
             </div>
-            <div class="recent-single-post">
-              <a href="/post" class="post-title">为 Ubuntu 和 Debian 安装最新版本的 Node.js</a>
-              <div class="date">2016年3月23日</div>
-            </div>
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
