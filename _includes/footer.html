@@ -13,6 +13,9 @@
               <div class="date">{{post.date | date_to_string}}</div>
             </div>
             {% endif %}
+            {% if forloop.index > 2 %}
+            {% break %}
+            {% endif %}
             {% endfor %}
           </div>
         </div>
