@@ -17,3 +17,11 @@ github_username:  wongjohn
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js]
+
+# Pagination
+paginate: 2
+paginate_path: "page/:num"
+
+gems:
+ - jekyll-sitemap
+ - jekyll-paginate

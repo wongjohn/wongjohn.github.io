@@ -2,10 +2,11 @@
 layout: post
 title:  Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客
 author: 王赛
-date:   2016-04-28 15:01:21 +0800
+date: 2016-04-28 15:01:21 +0800
 categories: tech-radar
-media-image: images/ghost-desktop-app.png
+mediaImage: images/ghost-desktop-app.png
 excerpt: 虽然通过浏览器管理 Ghost 博客虽然很方便，但是在多个 tab 之间切换有时候也会很麻烦，嗯，如果能有一个独立的 app 应该使用起来会更爽一些！ 今天的主角来了，Ghost 桌面版APP -- Ghost Desktop！
+featured: true
 ---
 虽然通过浏览器管理 Ghost 博客虽然很方便，但是在多个 tab 之间切换有时候也会很麻烦，嗯，如果能有一个独立的 app 应该使用起来会更爽一些！
 
