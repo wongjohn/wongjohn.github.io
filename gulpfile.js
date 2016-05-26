@@ -10,6 +10,10 @@ var dependencies = [
     'node_modules/bootstrap/dist/**/*.*'
 ];
 
+gulp.task('clean:build', function (done) {
+    del('_site');
+    done();
+});
 
 gulp.task('clean:_site_node_modules', function (done) {
     del('_site/node_modules');
