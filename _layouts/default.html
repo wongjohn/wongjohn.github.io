@@ -8,7 +8,21 @@
 
 {% include navigation.html %}
 
-{% include content-wrap.html %}
+<!-- start site's main content area -->
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8 main-content">
+                {{ content }}
+            </main>
+            <!-- main-content -->
+
+            {% include sidebar.html %}
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section><!-- content-wrap -->
 
 {% include footer.html %}
 
