@@ -1,19 +1,21 @@
 ---
 layout: default
 ---
-<article id="97" class="post">
+<article class="post">
 
     <header class="post-head">
-        <h1 class="post-title">Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客</h1>
+        <h1 class="post-title">{{page.title}}</h1>
         <section class="post-meta">
-            <span class="author">作者：<a href="/author/wangsai/">王赛</a></span> &bull;
-            <time class="post-date" datetime="2016年4月28日星期四上午10点14分" title="2016年4月28日星期四上午10点14分">2016年4月28日</time>
+            <span class="author">作者：<a href="/about/">{{page.author}}</a></span> &bull;
+            <time class="post-date" datetime="{{page.date | date_to_string}}" title="{{page.date | date_to_string}}">{{page.date | date_to_string}}</time>
         </section>
     </header>
 
+    {% if page.mediaImage %}
     <section class="featured-media">
-        <img src="http://static.ghostchina.com/image/4/45/e447fa21190690b28f1957d5937f4.png" alt="Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客">
+        <img src="{{page.mediaImage | prepend: site.baseurl | replace: '//', '/'}}" alt="{{page.title}}">
     </section>
+    {% endif %}
 
     <section class="post-content">
         {{ content }}
@@ -21,23 +23,18 @@ layout: default
 
     <div class="about-author clearfix">
         <a href="/about" class="avatar pull-left">
-            <img src="../images/dog-logo.svg">
+            <img src="{{'/images/dog-logo.svg' | prepend: site.baseurl | replace: '//', '/'}}">
         </a>
 
         <div class="details">
             <div class="author">
-                关于作者 <a href="/about">王士江</a>
+                关于作者 <a href="/about">{{page.author}}</a>
             </div>
             <div class="meta-info">
                 <span class="location"><i class="fa fa-home">北京</i></span>
             </div>
         </div>
     </div><!-- about-author -->
-
-    <div class="pre-next-wrap clearfix">
-        <a class="btn btn-default" href="/post"><i class="fa fa-angle-left fa-fw"></i> 为 Ubuntu 和 Debian 安装最新版本的 Node.js</a>
-        &nbsp;
-    </div><!-- pre-next-wrap -->
 
 </article><!-- article -->
 {% include recommend-ujian.html %}
