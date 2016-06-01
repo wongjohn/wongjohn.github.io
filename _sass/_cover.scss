@@ -1,0 +1,34 @@
+/* cover*/
+/*====================================================
+	Tag page & author page cover
+====================================================*/
+.cover {
+  text-align: center;
+  background: #ffffff;
+  padding: 35px;
+  margin-bottom: 35px;
+}
+.cover .tag-name {
+  margin-top: 0;
+}
+.cover .post-count {
+  margin-top: 7px;
+  color: #959595;
+}
+.cover .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.cover .meta-info {
+  color: #959595;
+}
+.cover .meta-info span {
+  margin: 0 7px;
+}
+.cover .meta-info span i {
+  margin-right: 7px;
+}
+.cover .bio {
+  margin-top: 7px;
+}

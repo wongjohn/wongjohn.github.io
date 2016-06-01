@@ -1,0 +1,46 @@
+/* author */
+/*====================================================
+	about author and comment
+====================================================*/
+.about-author {
+  background: #ffffff;
+  padding: 35px;
+  margin-bottom: 35px;
+}
+.about-author .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.about-author .details {
+  margin-left: 114px;
+}
+.about-author .author {
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+.about-author .author a:hover {
+  text-decoration: none;
+}
+.about-author .meta-info {
+  color: #959595;
+  margin-bottom: 7px;
+}
+.about-author .meta-info span {
+  margin-right: 14px;
+  white-space: nowrap;
+}
+.about-author .meta-info span i {
+  margin-right: 7px;
+}
+/* prev and next link */
+.prev-next-wrap {
+  margin-bottom: 35px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .prev-next-wrap a {
+    display: block;
+  }
+}

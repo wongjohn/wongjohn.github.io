@@ -1,0 +1,75 @@
+/* footer */
+/*====================================================
+	footer
+====================================================*/
+.main-footer {
+  background: #202020;
+  padding: 35px 0 0;
+  color: #959595;
+}
+.main-footer .widget .title {
+  color: #ffffff;
+  border-bottom: 1px solid #303030;
+}
+.main-footer .widget .tag-cloud a {
+  border: 1px solid #303030;
+}
+.main-footer .widget .tag-cloud a:hover {
+  border: 1px solid #e67e22;
+}
+.main-footer .widget .friend-links a {
+  border: none;
+}
+.main-footer .widget .friend-links a:hover {
+  border: none;
+}
+.main-footer .widget .friend-links hr {
+  margin: 1em 0;
+  border-top: 1px dashed #303030;
+}
+.main-footer .widget .recent-post .recent-single-post {
+  border-bottom: 1px dashed #303030;
+}
+.main-footer .widget .recent-post .recent-single-post .post-title {
+  color: #959595;
+}
+.main-footer .widget .recent-post .recent-single-post .post-title:hover {
+  color: #e67e22;
+}
+.main-footer .widget .recent-post .recent-single-post .date {
+  color: #505050;
+}
+.copyright {
+  background: #111;
+  font-size: 13px;
+  text-align: center;
+  color: #555555;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-top: 1px solid #303030;
+}
+.copyright span {
+  margin: 0 .5em;
+}
+.copyright a {
+  color: #555555;
+}
+#back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(230, 126, 34, 0.6);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2px;
+  z-index: 1;
+  display: none;
+}
+#back-to-top:hover {
+  background: #e67e22;
+}
+#back-to-top i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}

@@ -204,3 +204,123 @@ pre {
         }
     }
 }
+/*====================================================
+	Importing bootstrap less files
+====================================================*/
+/*====================================================
+	COLOR VARIABLE FOR THEME
+====================================================*/
+/* common */
+/*====================================================
+	common styles
+====================================================*/
+html,
+body {
+    color: #505050;
+    line-height: 1.75em;
+    background: #ebebeb;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    color: #303030;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.75em;
+}
+a {
+    color: #e67e22;
+    outline: none;
+}
+a:hover {
+    color: #e67e22;
+}
+a:active,
+a:focus,
+a img {
+    outline: none;
+}
+.btn {
+    padding: 7px 14px;
+    border-radius: 2px;
+}
+.btn-default {
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.btn-default:hover {
+    border: 1px solid #303030;
+    background: #303030;
+    color: #ffffff;
+}
+.btn-default:focus {
+    outline: none;
+}
+.btn-default[disabled] {
+    border: 1px solid #303030;
+    background: #303030;
+    color: #ffffff;
+}
+input[type="search"],
+input[type="text"],
+input[type="url"],
+input[type="email"],
+textarea {
+    padding: 7px 7px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid #e67e22;
+    outline: none;
+}
+blockquote {
+    border-left: 4px solid #e67e22;
+}
+pre {
+    padding: 0;
+    background: none;
+    border: none;
+}
+::-moz-selection {
+    color: #ffffff;
+    background: #e67e22;
+    text-shadow: none;
+}
+::selection {
+    color: #ffffff;
+    background: #e67e22;
+    text-shadow: none;
+}
