@@ -5,17 +5,17 @@
   margin-bottom: 35px;
   .tag-meta {
     position: absolute;
-    left: -8px;
-    top: 10px;
+    left: 8px;
+    top: -8px;
     width: 100px;
     background-color: #e67e22;
     text-align: center;
     &:before {
       content: "";
       position: absolute;
-      top: -8px;
-      left: 0;
-      border-color: transparent #826C00 #826C00 transparent;
+      top: 0;
+      right: -8px;
+      border-color: transparent transparent #826C00 #826C00;
       border-style: solid;
       border-width: 4px;
       width: 0;
