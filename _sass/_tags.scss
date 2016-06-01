@@ -7,9 +7,10 @@
     position: absolute;
     left: 8px;
     top: -8px;
-    width: 100px;
+    width: 160px;
     background-color: #e67e22;
     text-align: center;
+    padding: 5px 10px;
     &:before {
       content: "";
       position: absolute;
@@ -23,7 +24,7 @@
     }
     h2 {
       display: inline;
-      font-size: 14px;
+      font-size: 16px;
       color: #ffffff;
     }
   }
