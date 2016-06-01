@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in paginator.posts  %}
-<article class="post feature">
+<article class="post {% if post.featured %} feature {% endif %}">
     {% if post.featured %}
     <div class="featured" title="推荐文章">
         <i class="fa fa-star"></i>
