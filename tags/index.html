@@ -6,7 +6,20 @@ layout: base
     <div class="container">
         <div class="row">
             <main class="col-md-12 main-content">
-                {{ content }}
+                {% for tag in site.tags %}
+                <section class="article-in-tags col-sm-8 col-sm-offset-2">
+                    <h2 id="{{tag[0]}}">{{tag[0]}}</h2>
+                    <ul>
+                        {% assign pages_list = tag[1] %}
+                        {% for post in pages_list %}
+                        <li>
+                            <a href="{{post.url | prepend: site.baseurl | replace: '//', '/'}}">{{post.title}}</a>
+                        </li>
+                        {% endfor %}
+                        {% assign pages_list = nil %}
+                    </ul>
+                </section>
+                {% endfor %}
             </main><!-- main-content -->
         </div><!-- row -->
     </div><!-- container -->
