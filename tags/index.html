@@ -7,9 +7,12 @@ layout: base
         <div class="row">
             <main class="col-md-12 main-content">
                 {% for tag in site.tags %}
-                <section class="article-in-tags col-sm-8 col-sm-offset-2">
-                    <h2 id="{{tag[0]}}">{{tag[0]}}</h2>
-                    <ul>
+                <section class="article-tags col-sm-8 col-sm-offset-2" id="{{tag[0]}}">
+                    <div class="tag-meta">
+                        <h2>{{tag[0]}}</h2>
+                        <span class="badge">{{tag[1].size}}</span>
+                    </div>
+                    <ul class="list-unstyled">
                         {% assign pages_list = tag[1] %}
                         {% for post in pages_list %}
                         <li>
