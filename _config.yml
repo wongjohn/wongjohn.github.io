@@ -19,7 +19,7 @@ markdown: kramdown
 exclude: [node_modules, gulpfile.js]
 
 # Pagination
-paginate: 2
+paginate: 7
 paginate_path: "page/:num"
 
 gems:
