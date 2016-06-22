@@ -11,11 +11,13 @@ email: wangshijiang@eqxiu.com
 description: 王士江的博客，学习认真活着
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://wongjohn.github.io" # the base hostname & protocol for your site
+repository: https://github.com/wongjohn/wongjohn.github.io
 twitter_username: wongjohn
 github_username:  wongjohn
 
 # Build settings
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
 exclude: [node_modules, gulpfile.js]
 
 # Pagination
