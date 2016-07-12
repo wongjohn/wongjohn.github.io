@@ -21,21 +21,6 @@ layout: default
         {{ content }}
     </section>
 
-    <div class="about-author clearfix">
-        <a href="/about" class="avatar pull-left">
-            <img src="{{'/images/dog-logo.svg' | prepend: site.baseurl | replace: '//', '/'}}">
-        </a>
-
-        <div class="details">
-            <div class="author">
-                关于作者 <a href="/about">{{page.author}}</a>
-            </div>
-            <div class="meta-info">
-                <span class="location"><i class="fa fa-home">北京</i></span>
-            </div>
-        </div>
-    </div><!-- about-author -->
-
 </article><!-- article -->
 {% include recommend-ujian.html %}
 {% include comments-ds.html %}
