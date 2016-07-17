@@ -9,7 +9,7 @@ mediaImage: images/jekyll-blog.png
 excerpt: 使用Jekyll和Bootstrap，创建一个就像当前网站一样的静态网站——可以是个人博客、项目介绍、学习笔记等等。
 ---
 
-这篇博客是为了介绍使用Jekyll和Bootstrap，创建一个类似[当前网站](http://wongjohn.github.io/)一样的静态网站。
+这篇博客是为了介绍使用Jekyll和Bootstrap，创建一个类似[当前网站]({{site.url}})一样的静态网站。
 
 ## 这个博客网站的源代码在哪里？
 
