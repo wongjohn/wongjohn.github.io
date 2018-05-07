@@ -71,6 +71,6 @@ const puppeteer = require('puppeteer');
 
 ### 执行结果截图
 
-![执行结果](/docs/es6-crawl-with-puppeteer.png)
+![执行结果](/images/puppeteer/es6-crawl-with-puppeteer.png)
 
 
