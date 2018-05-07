@@ -107,7 +107,10 @@ const puppeteer = require('puppeteer');
 
 接下来是一个匿名的`立即执行函数`（IIFE，Immediately Invoked Function Expression），里面是我们需要执行的测试代码，
 [`async`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
-是`ES7`中用于异步操作的关键字，表示内部是异步操作，返回一个异步操作的结果（在`ES6`中，异步操作结果使用`Promise`表示）。
+是`ES7`中用于异步操作的关键字，表示内部是异步操作，返回一个异步操作的结果。
+
+关于`async`和`await`的更详细的内容，参见阮一峰的开源电子书[《ECMAScript 6 入门》](http://es6.ruanyifeng.com/#docs/async)
+（电子书地址：[http://es6.ruanyifeng.com/](http://es6.ruanyifeng.com/)）
 
 {% highlight javascript %}
 (async() => {
