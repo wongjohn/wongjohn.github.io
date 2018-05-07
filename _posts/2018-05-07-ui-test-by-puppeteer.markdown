@@ -5,7 +5,7 @@ author:     王士江
 date:       2018-05-07 11:02:00 +0800
 categories: notes
 tags:       Puppeteer UI Test
-mediaImage: images/puppeteer/ui-test-by-puppeteer-headless.png
+mediaImage: /images/puppeteer/ui-test-by-puppeteer-headless.png
 excerpt: Puppeteer是Chrome官方团队进行维护的一个Node库，通过提供了一组高级API，可以让用户界面测试变得很轻松。
 ---
 
