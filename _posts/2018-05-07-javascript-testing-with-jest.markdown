@@ -28,16 +28,16 @@ npm start
 
 ### 执行`demo.test.js`文件结果
 
-![DEMO执行结果](/docs/javascript-testing-with-jest-demo.png)
+![DEMO执行结果](/images/jest/javascript-testing-with-jest-demo.png)
 
 ### 执行所有文件结果
 
-![执行所有文件结果](/docs/javascript-testing-with-jest-login.png)
+![执行所有文件结果](/images/jest/javascript-testing-with-jest-login.png)
 
 ### 在实际项目中，测试用例成功截图
 
-![成功截图](/docs/success.jpg)
+![成功截图](/images/jest/success.jpg)
 
 ### 在实际项目中，测试用例失败截图
 
-![失败截图](/docs/failure.jpg)
+![失败截图](/images/jest/failure.jpg)
