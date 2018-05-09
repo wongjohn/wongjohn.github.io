@@ -5,7 +5,6 @@ author:     王士江
 date:       2018-05-09 15:30:00 +0800
 categories: notes
 tags:       iOS keyboard webview input
-mediaImage: /images/problems/ios-webview-cant-open-keyboard.jpeg
 excerpt:
 ---
 
@@ -54,3 +53,5 @@ function handleClick (event) {
     }, 100)
 }
 {% endhighlight %}
+
+![项目中的使用场景截图](/images/problems/ios-webview-cant-open-keyboard.jpeg)
