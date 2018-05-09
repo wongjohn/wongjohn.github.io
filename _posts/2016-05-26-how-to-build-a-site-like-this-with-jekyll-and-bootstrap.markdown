@@ -4,6 +4,7 @@ title:      使用Jekyll和Bootstrap，创建一个静态网站
 author:     王士江
 date:       2016-05-26 08:13:00 +0800
 categories: notes
+featured: true
 tags:       Bootstrap Jekyll
 mediaImage: /images/jekyll-blog.png
 excerpt: 使用Jekyll和Bootstrap，创建一个就像当前网站一样的静态网站——可以是个人博客、项目介绍、学习笔记等等。
