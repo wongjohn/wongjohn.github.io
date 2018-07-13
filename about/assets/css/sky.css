@@ -1,0 +1,319 @@
+#sky {
+	opacity: 0;
+	position: fixed;
+}
+
+.night .cloud {
+	background-color: transparent;
+	width: auto;
+	height: auto;
+}
+
+.night .cloud:before,
+.night .cloud:after{
+	content: "\2605";
+	color: white;
+	position: absolute;
+	top: 0;
+	background-color: transparent;
+	left: 0;
+	width: 50px;
+	height: 50px;
+}
+
+.cloud {
+	width: 200px;
+	height: 60px;
+	background: #fff;
+	z-index: -10;
+	border-radius: 200px;
+	position: fixed;
+}
+
+.cloud:before,.cloud:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	border-radius: 100px;
+
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px;
+	height: 120px;
+	top: -55px;
+	left: auto;
+	right: 15px;
+}
+
+ #plane1 {
+	background: url(../img/plane.png) no-repeat 0 0;
+	height: 119px;
+	position: fixed;
+	left: -704px;
+	bottom: 5%;
+	overflow: visible;
+	width: 704px;
+	display: block;
+	z-index: -9;
+
+	-webkit-animation: fly 30s infinite linear;
+	-moz-animation: fly 30s infinite linear;
+	-ms-animation: fly 30s infinite linear;
+	-o-animation: fly 30s infinite linear;
+	animation: fly 30s infinite linear;
+}
+
+#plane2 {
+	background: url(../img/plane-2.png) no-repeat 0 0;
+	width: 310px;
+	position: fixed;
+	right: -310px;
+	top: 5%;
+	overflow: visible;
+	height: 103px;
+	display: block;
+	z-index: -8;
+
+	-webkit-animation: fly1 20s infinite linear;
+	-moz-animation: fly1 20s infinite linear;
+	-ms-animation: fly1 20s infinite linear;
+	-o-animation: fly1 20s infinite linear;
+	animation: fly1 20s infinite linear;
+}
+
+#plane3 {
+	background: url(../img/plane-3.png) no-repeat 0 0;
+	width: 306px;
+	position: fixed;
+	right: -306px;
+	top: 25%;
+	overflow: visible;
+	height: 100px;
+	display: block;
+	z-index: -7;
+
+	-webkit-animation: fly1 25s infinite linear;
+	-moz-animation: fly1 25s infinite linear;
+	-ms-animation: fly1 25s infinite linear;
+	-o-animation: fly1 25s infinite linear;
+	animation: fly1 25s infinite linear;
+}
+
+#balloon {
+	background: url(../img/balloon.png) no-repeat 0 0;
+	width: 125px;
+	position: fixed;
+	left: 62%;
+	top: 52%;
+	overflow: visible;
+	height: 162px;
+	display: block;
+	z-index: -6;
+
+	-webkit-animation: flyUp 135s linear;
+	-moz-animation: flyUp 135s linear;
+	-ms-animation: flyUp 135s linear;
+	-o-animation: flyUp 135s linear;
+	animation: flyUp 135s linear;
+}
+
+@keyframes "fly" {
+ 0% {
+    left: -704px;
+ }
+
+99.9999% {
+	left: 100%;
+}
+ 100% {
+    left: -704px;
+ }
+
+}
+
+@-moz-keyframes fly {
+ 0% {
+   left: -704px;
+ }
+
+99.9999% {
+	left: 100%;
+}
+ 100% {
+   left: -704px;
+ }
+
+}
+
+@-webkit-keyframes "fly" {
+ 0% {
+   left: -704px;
+ }
+
+99.9999% {
+	left: 100%;
+}
+ 100% {
+   left: -704px;
+ }
+
+}
+
+@-ms-keyframes "fly" {
+ 0% {
+   left: -704px;
+ }
+
+99.9999% {
+	left: 100%;
+}
+ 100% {
+   left: -704px;
+ }
+
+}
+
+@-o-keyframes "fly" {
+ 0% {
+   left: -704px;
+ }
+
+99.9999% {
+	left: 100%;
+}
+ 100% {
+   left: -704px;
+ }
+
+}
+
+@keyframes "fly1" {
+ 0% {
+    right: -310px;
+ }
+
+99.9999% {
+	right: 100%;
+}
+ 100% {
+    right: -310px;
+ }
+
+}
+
+@-moz-keyframes fly1 {
+ 0% {
+   right: -310px;
+ }
+
+99.9999% {
+	right: 100%;
+}
+ 100% {
+   right: -310px;
+ }
+
+}
+
+@-webkit-keyframes "fly1" {
+ 0% {
+   right: -310px;
+ }
+
+99.9999% {
+	right: 100%;
+}
+ 100% {
+   right: -310px;
+ }
+
+}
+
+@-ms-keyframes "fly1" {
+ 0% {
+   right: -310px;
+ }
+
+99.9999% {
+	right: 100%;
+}
+ 100% {
+   right: -310px;
+ }
+
+}
+
+@-o-keyframes "fly1" {
+ 0% {
+   right: -310px;
+ }
+
+99.9999% {
+	right: 100%;
+}
+ 100% {
+   right: -310px;
+ }
+
+}
+
+@keyframes "flyUp" {
+ 0% {
+    top: 100%;
+ }
+ 100% {
+    top: 52%;
+ }
+
+}
+
+@-moz-keyframes flyUp {
+ 0% {
+   top: 100%;
+ }
+ 100% {
+   top: 52%;
+ }
+
+}
+
+@-webkit-keyframes "flyUp" {
+ 0% {
+   top: 100%;
+ }
+ 100% {
+   top: 52%;
+ }
+
+}
+
+@-ms-keyframes "flyUp" {
+ 0% {
+   top: 100%;
+ }
+ 100% {
+   top: 52%;
+ }
+
+}
+
+@-o-keyframes "flyUp" {
+ 0% {
+   top: 100%;
+ }
+ 100% {
+   top: 52%;
+ }
+
+}
