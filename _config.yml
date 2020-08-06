@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Wang John's Blog
+title: 磨刀不误砍柴工
 email: shijiangjiayou@163.com
-description: 王士江的博客，学习认真活着
+description: 磨刀不误砍柴工
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://wongjohn.github.io" # the base hostname & protocol for your site
 repository: https://github.com/wongjohn/wongjohn.github.io
